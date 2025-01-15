@@ -1,6 +1,6 @@
 import styles from './footer.module.css';
 
-const anoatual = new Date().getFullYear(); // Obtém o ano atual
+const anoatual = new Date().getFullYear();
 
 export default function FooterComponent() {
     return (
