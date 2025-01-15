@@ -1,12 +1,12 @@
 .header {
-    max-width: 1440px;
     width: 100%;
+    max-width: 1440px;
     display: flex;
     padding-top: 10px;
     margin: 0 auto;
 }
 
-.header .linklogo img {
+.linklogo img {
     max-width: 110px;
     background-color: var(--cor-fundo-cinza-escuro);
     transition: all .4s ease-in-out;
@@ -14,7 +14,7 @@
     z-index: 1;
 }
 
-.header .linklogo {
+.linklogo {
     display: flex;
     position: relative;
     justify-content: center;
@@ -31,7 +31,7 @@
     height: 130%;
     position: absolute;
     content: '';
-    background: repeating-conic-gradient(#FF2770 0%, #FF2770 5%, #FF2770 10%, transparent 5%, transparent 40%, #FF2770 50%);
+    background: repeating-conic-gradient(#00f 0%, #00f 5%, #00f 10%, transparent 5%, transparent 40%, #00f 50%);
     animation: anime 4s linear infinite;
     animation-delay: -1s;
     border-radius: 15px;
@@ -42,7 +42,7 @@
     height: 130%;
     position: absolute;
     content: '';
-    background: repeating-conic-gradient(#45F3FF 0%, #45F3FF 5%, #45F3FF 10%, transparent 5%, transparent 40%, #45F3FF 50%);
+    background: repeating-conic-gradient(#00f 0%, #00f 5%, #00f 10%, transparent 5%, transparent 40%, #00f 50%);
     animation: anime 4s linear infinite;
     border-radius: 15px;
 }

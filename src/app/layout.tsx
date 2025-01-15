@@ -1,31 +1,37 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import HeaderComponent from "./components/header/header";
+import type { Metadata } from 'next';
+import {
+  Geist,
+  Geist_Mono
+} from 'next/font/google';
+import './globals.css';
+import HeaderComponent from '@/components/header/header';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const geistSans = Geist({
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "BetoFoxNet_Info",
-  description: "Empresa de Desenvolvimento de App",
+  title: 'BetoFoxNet_Info',
+  description: 'Empresa de Desenvolvimento de App',
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="pt_BR">
+    <html lang='pt_BR'>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <HeaderComponent />
         {children}
       </body>
     </html>
   );
-};
+}
